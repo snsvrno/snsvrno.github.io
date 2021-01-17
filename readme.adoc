@@ -1,3 +1,0 @@
-= Content
-
-the content branch, where all the raw content is stored.
