@@ -12,3 +12,15 @@ This repository has 3 branches which are used to make and manage the site.
 Content:: Has the most of the raw source files that is processed to make the *content*
 Generator:: Has the scripts that process the *content* and puts it into the *site*
 Site:: The "rendered" html site.
+
+== Custom Plugins
+
+|===
+|plugin|description
+
+|`src.ascii` | a adoc parser, created this because the existing parsers wouldn't handle embedded metadata
+|`src.git` | used to hide .git files from the source directory, because mine is a separate repository. not really needed ...
+|`src.importer` | scraps and imports files from outside the `source` directory, and adds it to the processing tree
+|`src.inheriter` | applies metadata from parents (folder structure) to children
+|`src.sass` | my own rolled sass/scss processer, because the existing one wouldn't process files outside of the `source` directory
+|===
