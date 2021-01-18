@@ -1,6 +1,8 @@
 = Generator
 
-the generator branch, has the script to create the site, as well as subfolders for the site (`target`) and the content (`content`).
+the generator branch , has the script to create the site, as well as subfolders for the site (`target`) and the content (`content`).
+
+uses link:https://metalsmith.io[Metalsmith]
 
 == How this Works
 
