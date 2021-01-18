@@ -1,3 +1,12 @@
 = Generator
 
-the generator branch, has the script to create the site, as well as subfolders for the site (target) and the content (content).
+the generator branch, has the script to create the site, as well as subfolders for the site (`target`) and the content (`content`).
+
+== How this Works
+
+This repository has 3 branches which are used to make and manage the site.
+
+[horizontal]
+Content:: Has the most of the raw source files that is processed to make the *content*
+Generator:: Has the scripts that process the *content* and puts it into the *site*
+Site:: The "rendered" html site.

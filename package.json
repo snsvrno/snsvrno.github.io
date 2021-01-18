@@ -1,0 +1,27 @@
+{
+  "name": "snsvrno.github.io",
+  "version": "1.0.0",
+  "description": "snsvrno static site generator",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snsvrno/snsvrno.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snsvrno/snsvrno.github.io/issues"
+  },
+  "homepage": "https://github.com/snsvrno/snsvrno.github.io#readme",
+  "devDependencies": {
+    "asciidoctor.js": "^1.5.9",
+    "jstransformer-handlebars": "^1.1.0",
+    "metalsmith": "^2.3.0",
+    "metalsmith-asciidoctor": "^1.1.2",
+    "metalsmith-debug": "^1.2.0",
+    "metalsmith-layouts": "^2.3.1"
+  }
+}

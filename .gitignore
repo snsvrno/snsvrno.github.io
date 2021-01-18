@@ -1,2 +1,5 @@
-target/
 content/
+
+target/
+
+node_modules/
