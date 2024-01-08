@@ -1,0 +1,12 @@
+<link id="colorStyle" rel="stylesheet" href="{{site_root}}/main.css" media="all">
+<title>{{title}}</title>
+<script>
+	var choices = [
+		"monochrome",
+		"main"
+	];
+	var choice = Math.floor(Math.random() * choices.length);
+
+	document.getElementById("colorStyle").setAttribute("href","{{site_root}}/" + choices[choice] + ".css");
+
+</script>

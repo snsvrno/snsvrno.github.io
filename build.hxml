@@ -1,0 +1,10 @@
+-cp src
+-cp plugins
+-cp tools
+
+-lib ansi
+-lib markdown
+
+-main Build
+
+-x Build

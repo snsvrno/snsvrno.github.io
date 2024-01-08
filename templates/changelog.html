@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<{{head}}>
+	</head>
+	<body>
+		<{{menu}}>
+		<h1>{{title}}</h1>
+		<ul>
+		::for version in "/versions"::
+		<li><a href="{{site_root}}{{version.path}}">{{version.fileName}}</a></li>
+		::end::
+		</ul>
+	</body>
+</html>
