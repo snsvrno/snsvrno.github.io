@@ -15,14 +15,19 @@ Fundamentally this is a file processor. You feed it files, tell it what to do to
 - `tools` has the core types and classes for the `Site`
 - `src` is my specific directions to make my site
 
-The group of files are loaded into "areas". By default there is one area, the "content" area. Additional areas can be used for different kinds of files.
+When you construct your project, you will collect files and place them in different `areas`. Then you will run modifier plugins that will work on one or more of these areas to then generate the final content (whatever that may be). For Example:
 
-> for example:
->
-> - "content" is the actual content of the site
-> - "templates" is partial files that will be used to build real files when used with `content`
-> - "css" is where we put the content files for the styles
-> - "css templates" is partial files that will be used to make the final css files
+> - "/content" is the actual content of the site
+>     - `addFiles(...)` is used to add `md` files into the `content` area.
+>     - `markdown(...)` is used to render the markdown to html.
+> - "/templates" is partial files that will be used to build real files.
+>     - `addFiles(...)` is used to add `html` files into the `template` area.
+>     - `templates(...)` is used to process `content` area using the files in `template` area as a template.
+> - "/css" has the start of some css files
+>     - `addFiles(...)` is used to add `css` files into the `style` area.
+> - "/templates" has more partial files that weren't scanned earlier
+>     - `addFiles(...)` is used to add `css` files into the `template/style` area.
+>     - `templates(...)` is used to process `style` area using the files in `template/style` area as a template.
 
 ### Plugins
 
